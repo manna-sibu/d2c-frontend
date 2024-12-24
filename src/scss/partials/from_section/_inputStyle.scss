@@ -1,0 +1,329 @@
+@use '../variable' as*;
+@use '../mixins' as*;
+
+// PAGE FORM
+.checkbox-list input[type=file]:focus,
+.checkbox-list input[type=checkbox]:focus,
+.checkbox-list input[type=radio]:focus {
+    outline: none;
+    outline-offset: 0;
+}
+
+.form-control::-webkit-input-placeholder {}
+
+.form-control::-moz-placeholder {}
+
+.form-control::-ms-placeholder {}
+
+.form-control::placeholder {}
+
+.field {
+    margin: 0 0 20px;
+    //@include selfClearing;
+
+    label {
+        display: block;
+        width: 100%;
+        margin-bottom: 10px;
+        color: var(--color-text);
+        font-size: 15px;
+        font-weight: $med;
+    }
+
+    .error {
+        border-color: var(--color-ff0800);
+
+        &+.error {
+            color: var(--color-ff0800);
+            font-weight: $regular;
+            border-color: $trans;
+            font-size: 14px;
+            margin: $mar 0 0;
+        }
+    }
+}
+
+.form-control,
+.form-select {
+    display: block;
+    width: 100%;
+    padding: 18px;
+    line-height: 1.5;
+    color: var(--color-text);
+    border: 1px solid var(--color-D3D7DF);
+    border-radius: 10px;
+    outline: none;
+    font-size: 14px;
+
+    &:focus {
+        outline: none;
+        background-color: var(--color-1F1A24);
+        color: var(--color-text);
+    }
+}
+
+/* Checkbox Css Style */
+.form-check {
+    //cursor: pointer;  
+    position: relative;
+    padding-left: 43px;
+    font-weight: $light;
+    width: 100%;
+    display: block;
+    font-size: 16px;
+
+    .error {
+        border-color: var(--red-color);
+
+        &+label {
+            display: none !important;
+        }
+    }
+
+    label {
+        cursor: pointer;
+    }
+
+    .checkbox {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        -ms-appearance: none;
+        -o-appearance: none;
+        appearance: none;
+        position: absolute;
+        top: 3px;
+        right: 0;
+        bottom: 0;
+        left: 12px;
+        z-index: 9;
+        height: 16px;
+        width: 16px;
+        transition: all 0.15s ease-out 0s;
+        display: inline-block;
+        outline: none;
+        //cursor: pointer; 
+        background: var(--color-010214);
+        border: 1px solid var(--color-D3D7DF);
+        @include border-radius(4px);
+
+        &:checked {
+            background: var(--color-D3D7DF);
+            border: 1px solid var(--color-D3D7DF);
+
+            &:before {
+                content: '✔';
+                height: 16px;
+                width: 16px;
+                line-height: 16px;
+                position: absolute;
+                display: inline-block;
+                font-size: 12px;
+                text-align: center;
+                color: var(--white-color);
+                display: none;
+            }
+        }
+    }
+}
+
+.form-radio {
+    @extend .form-check;
+
+    .radiobox {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        -ms-appearance: none;
+        -o-appearance: none;
+        appearance: none;
+        position: absolute;
+        top: 4px;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 9;
+        @include border-radius(50%);
+        height: 18px;
+        width: 18px;
+        transition: all 0.15s ease-out 0s;
+        display: inline-block;
+        outline: none;
+        cursor: pointer;
+        border: 1px solid var(--color-57B3B5);
+        //background-color: ;
+        //@include box-shadow(0px 3px 5px 0px rgba(#000000, 0.4));  
+
+        &:checked {
+            &:before {
+                content: '';
+                height: 10px;
+                width: 10px;
+                display: inline-block;
+                @include border-radius(50%);
+                @include middle;
+                border-color: 1px solid var(--color-57B3B5);
+                background-color: var(--color-57B3B5);
+            }
+        }
+    }
+}
+
+/* End Css */
+
+
+textarea.form-control {
+    height: auto;
+}
+
+.errorMessage,
+.successMessage {
+    padding: 0 0 0 28px;
+    background-color: $trans;
+    border-color: $trans;
+    position: relative;
+    display: inline-block;
+    line-height: 1.2;
+    font-weight: $light;
+    min-height: 24px;
+    margin-top: 20px;
+    font-size: 16px;
+    //max-width: 500px;
+
+    &:before {
+        display: inline-block;
+        font-family: 'Font Awesome 5 Pro';
+        font-weight: 900;
+        font-size: 18px;
+        position: absolute;
+        left: 0px;
+        top: 2px;
+    }
+}
+
+.errorMessage {
+    color: #f70017;
+
+    &:before {
+        content: "\f071";
+    }
+}
+
+.successMessage {
+    color: #00b80f;
+
+    &:before {
+        content: "\f164";
+    }
+}
+
+@include media(768px, min) {
+    .field {
+        margin: 0 0 25px;
+    }
+}
+
+
+
+// Button Stylings for Cookies Noti bar
+
+[class*=cta-] {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    position: relative;
+    border: 0px;
+    outline: none;
+    cursor: pointer;
+    padding: 13px 20px;
+    line-height: 1.2;
+    white-space: nowrap;
+    @include border-radius(10px);
+    font-size: 14px;
+    font-weight: $sum-med;
+
+
+    &.small {
+        font-size: 14px;
+        padding: 8px 16px;
+        font-weight: $med;
+    }
+
+    &.full {
+        display: block;
+        width: 100%;
+    }
+
+    &.with-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+    }
+
+    &.with-shadow {
+        box-shadow: 0 14px 16px 0 rgba($color: #005bac, $alpha: 0.3);
+
+    }
+}
+
+.cta- {
+    &primary {
+        background: var(--color-primary);
+        color: var(--color-white);
+
+        &:hover {
+            background: var(--color-black);
+            color: var(--color-white);
+        }
+    }
+
+    &secondary {
+        background: var(--color-secondary);
+        color: var(--color-primary);
+        padding: 17px 30px;
+
+        &:hover {
+            background: var(--color-black);
+            color: var(--color-white);
+
+            .fa-arrow-right {
+                @include rotateZ(0deg);
+            }
+        }
+
+        .fa-arrow-right {
+            margin-left: 5px;
+            -webkit-transition: 0.4s ease-out;
+            -moz-transition: 0.4s ease-out;
+            transition: 0.4s ease-out;
+            @include rotateZ(-50deg);
+        }
+    }
+
+    &-with-arrow {
+        position: relative;
+
+        &:after {
+            content: "\f061";
+            @include fontAwesome6;
+            font-size: 24px;
+            position: absolute;
+            right: 0;
+            @include rotateZ(-45deg);
+            transition: 150ms linear all;
+        }
+
+        &:hover {
+            &:after {
+                @include rotateZ(0deg);
+            }
+        }
+    }
+}
+
+.text-link {
+    color: var(--color-primary);
+
+    &:hover {
+        text-decoration: underline;
+    }
+}

@@ -1,0 +1,41 @@
+// DIMENSIONS & GRID
+// --------------------------------
+@use "sass:math";
+
+// Variables Declaration
+// --------------------------------
+:root {
+    /* Colors */
+    --color-hover: #f2a32c;
+    --color-primary: #603384;
+    --color-secondary: #f2a32c;
+    --color-text: #515253;
+
+    --color-white: #ffffff;
+    --color-black: #000000;
+    --color-f5f5f5: #f5f5f5;
+
+}
+
+// FONT-WEIGHT - $MAIN
+// --------------------------------
+$slight: 100;
+$light: 300;
+$regular: 400;
+$med: 500;
+$sum-med: 600;
+$bold: 700;
+$strong: 700;
+$weightBlack: 900;
+
+$dm-sans: "DM Sans", sans-serif;
+
+
+// FX
+// --------------------------------
+$shadow: 0px 0px 5px 0px #333; // Global Box Shadow Style (if applicable)
+
+$gutter: 30px;
+$pad: 5px;
+$mar: 5px;
+$trans: transparent;

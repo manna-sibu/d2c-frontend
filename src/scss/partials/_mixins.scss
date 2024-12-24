@@ -1,0 +1,161 @@
+@use 'variable' as *;
+
+@mixin selfClearing {
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+@mixin fontAwesome6 {
+    font-family: "Font Awesome 6 Pro";
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    line-height: 1;
+    text-rendering: auto;
+    font-weight: 900;
+}
+
+@mixin flex-width($width) {
+    -ms-flex: $width;
+    flex: 0 0 $width;
+    max-width: $width;
+}
+
+@mixin ie8 {
+    html.generatedcontent.no-rgba & {
+        @content;
+    }
+}
+
+@mixin media($break, $dir: max) {
+    @media screen and (#{$dir}-width:$break) {
+        @content;
+    }
+}
+
+// Padding shorthand version
+@mixin padding($padding) {
+    padding: $padding;
+}
+
+// Margin shorthand version
+@mixin margin($margin) {
+    margin: $margin;
+}
+
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    border-radius: $radius;
+}
+
+@mixin rotateZ($angle) {
+    -webkit-transform: rotateZ($angle);
+    -moz-transform: rotateZ($angle);
+    -ms-transform: rotateZ($angle);
+    -o-transform: rotateZ($angle);
+    transform: rotateZ($angle);
+}
+
+@mixin box-sizing {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+@mixin translateY($value...) {
+    -webkit-transform: translateY($value);
+    -moz-transform: translateY($value);
+    -ms-transform: translateY($value);
+    -o-transform: translateY($value);
+    transform: translateY($value);
+}
+
+@mixin translateX($value...) {
+    -webkit-transform: translateX($value);
+    -moz-transform: translateX($value);
+    -ms-transform: translateX($value);
+    -o-transform: translateX($value);
+    transform: translateX($value);
+}
+
+@mixin transformscale($angle) {
+    -webkit-transform: scale($angle);
+    -moz-transform: scale($angle);
+    -ms-transform: scale($angle);
+    -o-transform: scale($angle);
+    transform: scale($angle);
+}
+
+@mixin transition($what, $time) {
+    transition: $what $time ease-in-out;
+    -ms-transition: $what $time ease-in-out;
+    -o-transition: $what $time ease-in-out;
+    -webkit-transition: $what $time ease-in-out;
+    -moz-transition: $what $time ease-in-out;
+}
+
+@mixin transitions($transitions...) {
+    transition: $transitions;
+    -ms-transition: $transitions;
+    -o-transition: $transitions;
+    -webkit-transition: $transitions;
+    -moz-transition: $transitions;
+}
+
+@mixin border-radius($radius) {
+    border-radius: $radius;
+}
+
+@mixin animation($name) {
+    @-webkit-keyframes #{$name} {
+        @content;
+    }
+
+    @-moz-keyframes #{$name} {
+        @content;
+    }
+
+    @keyframes #{$name} {
+        @content;
+    }
+}
+
+@mixin vertical-align {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+@mixin horizontal-align {
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+@mixin middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+@mixin global_btn {
+    background-color: var(--color-primary);
+    border: 1px solid var(--color-primary);
+    color: var(--color-white);
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 12px 32px;
+}
