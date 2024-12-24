@@ -5,4 +5,12 @@
 @use 'partials/mixins' as *;
 @use 'partials/footer' as*;
 @use 'partials/from_section/inputStyle' as*;
-@use 'partials/homepage'
+@use 'partials/homepage';
+
+@font-face {
+    font-family: "Font Awesome 6 Free";
+    src: url("../../webfonts/fa-brands-400.ttf") format("woff2"),
+        url("../webfonts/fa-solid-900.woff") format("woff");
+    font-weight: 900;
+    font-style: normal;
+}
