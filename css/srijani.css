@@ -6,7 +6,10 @@
     --off-white: #F5F5F5;
     --white: #FFFFFF;
 }
-
+/* Upcoming_Events */
+.Upcoming_Events{
+    padding-top: 90px !important;
+}
 /* story stream  */
 
 .section-two-four .story-stream-slider .flickity-button.previous {
@@ -304,9 +307,9 @@ svg {
 .brand_story {
     background-image: url(../images/brand_story.jfif);
     width: 100%;
-    height: 790px;
-    background-position: center;
+    background-position: center 110%;
     background-size: cover;
+    padding-bottom: 75px;
 }
 
 .brand_story_header h3 {
@@ -393,8 +396,61 @@ svg {
     .brand_story{
         height: 100%;
     }
+    /* d2c byts  */
+    .D2C_bytes .short_box img{
+        height: 100%;
+    }
+    
+    .D2C_bytes .flex_box{
+        gap: 35px;
+    }
+    .Upcoming_Events .card_wrapper {
+      
+        gap: 30px !important;
+    }
 }
-
+@media (min-width:769px) and (max-width:853px){
+    /* Upcoming_Events */
+    .Upcoming_Events .title{
+        display: unset !important;
+    }
+    .Upcoming_Events .title .view_more button{
+        margin-bottom: 50px;
+        margin-top: 20px;
+    }
+    .Upcoming_Events .card_wrapper .card_box_two{
+        margin-top: 40px;
+    }
+    .Upcoming_Events .card_wrapper{
+        display: unset !important;
+    }
+    .Upcoming_Events .card_wrapper .card_box_one{
+        max-width: 100% !important;
+    }
+    .Upcoming_Events .card_wrapper .card_box_one img{
+        width: 100%;
+    }
+    /* knowledge base  */
+    .tab_section .section-three_tabs{
+        display: unset !important;
+    }
+    .tab_section .section-three_tabs .info-area {
+        max-width: 100% !important;
+        margin-top: 40px;
+    }
+    /* story stream  */
+    .section-two-four .story-stream-slider .flickity-button.previous {
+        left: 15% !important;
+    }
+    .section-two-four .story-stream-slider .flickity-button.next {
+        left: 26% !important;
+    }
+    /* hot takes  */
+    .hot_takes .flex_box .long_box .img-info-card article{
+        margin-right: 0 !important;
+    }
+    
+}
 @media (max-width:991px){
      /* header  */
      .search-grid .fa-search {
@@ -422,7 +478,7 @@ svg {
     }
  /* Upcoming D2C Events  */
  .side_bg1 p{
-    font-size: 25px !important;
+    font-size: 22px !important;
  }
 }
 @media (max-width:768px){
@@ -446,7 +502,7 @@ svg {
         margin-top: 20px;
     }
     .Upcoming_Events .card_wrapper .card_box_two .card_box_even .event_info p{
-        font-size: 15px !important;
+        font-size: 14px !important;
     }
     .Upcoming_Events .card_wrapper .card_box_two .card_box_even .event_info span{
         right: 15px !important;
@@ -568,7 +624,7 @@ svg {
 }
 
 .Upcoming_Events .card_wrapper .card_box_two .card_box_even .event_date {
-    padding: 100px 0 120px !important;
+    padding: 80px 0 120px !important;
 }
 
 .Upcoming_Events .card_wrapper .card_box_two .card_box_even .event_info h5 {
@@ -580,7 +636,12 @@ svg {
 }
 
 
-
+.Upcoming_Events .card_wrapper .card_box_two .card_box_even .event_date .date_month .date_month_wrapper .month {
+    font-size: 30px !important;
+}
+.Upcoming_Events .card_wrapper .card_box_two .card_box_even .event_date .date_month .date_month_wrapper .date {
+    font-size: 50px !important;
+}
 
 
 /* story stream  */
@@ -628,6 +689,7 @@ svg {
 /* in 7 days  */
 .side_bg1 {
     background-image: none !important;
+    height: 58px;
 }
 
 .side_bg2 {
