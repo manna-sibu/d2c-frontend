@@ -112,6 +112,48 @@ $(function(){
             prevNextButtons: true,
         });
     }
+    if($('.long_box_beardo').length > 0){
+        $('.long_box_beardo').flickity({
+            //options            
+            cellAlign: 'left',
+            wrapAround: true,
+            groupCells: "100%",
+            contain: true,
+            pageDots: true,
+            prevNextButtons: true,
+            imagesLoaded: true,
+            adaptiveHeight: true, 
+            draggable: true,
+        });
+    };
+    if($('.short_box_beardo1').length > 0){
+        $('.short_box_beardo1').flickity({
+            //options            
+            cellAlign: 'left',
+            wrapAround: true,
+            groupCells: "100%",
+            contain: true,
+            pageDots: true,
+            prevNextButtons: true,
+            imagesLoaded: true,
+            adaptiveHeight: true, 
+            draggable: true,
+        });
+    };
+    if($('.short_box_beardo2').length > 0){
+        $('.short_box_beardo2').flickity({
+            //options            
+            cellAlign: 'left',
+            wrapAround: true,
+            groupCells: "100%",
+            contain: true,
+            pageDots: true,
+            prevNextButtons: true,
+            imagesLoaded: true,
+            adaptiveHeight: true, 
+            draggable: true,
+        });
+    };
 });
 
 

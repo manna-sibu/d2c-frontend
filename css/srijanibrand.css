@@ -1,0 +1,52 @@
+body,html{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+*{
+    --deep-purple:#613385;
+    --off-white:#F5F5F5;
+    --gray:#808080;
+}
+.border_ele{
+    border-left: 4px solid var(--deep-purple);
+}
+.electronics{
+    margin-top: 30px;
+}
+.electronics p{
+    font-size: 24px;
+    line-height: 40px;
+    font-weight: 600;
+    color: var(--deep-purple);
+    background: linear-gradient(90deg, #F3F3F4 0%, rgba(255, 255, 255, 0) 100%);
+    padding: 6px 16px;
+    width: fit-content;
+
+}
+.rating_section .star{
+    display: flex;
+    gap: 8px;
+}
+.star figure{
+    border-radius: 0;
+}
+.star img{
+    background-color: var(--deep-purple);
+    padding: 3px;
+}
+.star_bg img{
+    background-color:var(--off-white);
+}
+.rating_para{
+    display: flex;
+}
+.rating_para p{
+font-size: 20px;
+line-height: 24px;
+font-weight: 500;
+color: var(--gray);
+}
+.rating_para p span{
+    
+}
