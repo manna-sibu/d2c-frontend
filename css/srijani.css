@@ -279,6 +279,26 @@ svg {
 .brand-slider_info p {
     color: #515253;
 }
+/* hot takes  */
+
+.hot_takes  .flickity-button.previous {
+    background: url(../images/prev-arrow2\ \(1\).png) center center no-repeat;
+    width: 33px;
+    height: 33px;
+    border: none;
+}
+
+.hot_takes .flickity-button.next {
+    background: url(../images/next-arrow2.png) center center no-repeat;
+    width: 33px;
+    height: 33px;
+    border: none;
+}
+
+.hot_takes .flickity-page-dots {
+    bottom: 0;
+    display: none;
+}
 
 /* brand story  */
 .brand_story {
@@ -351,184 +371,335 @@ svg {
 
 /* RESPONSIVE  */
 
-@media (max-width:575px) {
-
-    /* knowledge base  */
-    .Upcoming_Events {
-        padding-top: 20px !important;
+@media (max-width:1024px){
+    .Upcoming_Events .title div h2{
+        font-size: 45px !important;
     }
-
-    .register_now_wrapper {
-        height: 100% !important;
-    }
-
-    .register_now_wrapper .details_inner .btn_section {
-        padding-top: 0 !important;
-    }
-
-    .register_now_wrapper .details_inner .btn_section div {
-        gap: 0 !important;
-    }
-
-    .register_now_wrapper .details_inner .btn_section button {
-        font-size: 15px !important;
-    }
-
-    .register_now_wrapper .details_inner .btn_section button:nth-of-type(2) {
-        font-size: 25px !important;
-    }
-
-    .Upcoming_Events .title div h2 {
-        font-size: 30px !important;
-    }
-
-    .Upcoming_Events .title {
-        display: unset !important;
-    }
-
     .Upcoming_Events .title div p {
-        font-size: 14px !important;
+        font-size: 17px !important;
     }
-
-    .Upcoming_Events .card_wrapper {
-        display: unset !important;
+    .tab_section .section-three_tabs .info-area #info_list li{
+        font-size: 16px !important;
     }
-
-    .Upcoming_Events .card_wrapper .card_box_one {
-        margin-top: 20px;
+/* story stream  */
+     
+    .section-two-four .story-stream-slider .flickity-button.previous{
+        left: 28% !important;
     }
-
-    .Upcoming_Events .card_wrapper .card_box_two .card_box_even {
-        max-height: 100% !important;
-    }
-
-    .Upcoming_Events .card_wrapper .card_box_two {
-        margin-top: 20px;
-    }
-
-    .Upcoming_Events .card_wrapper .card_box_two .card_box_even .event_date {
-        padding: 100px 0 120px !important;
-    }
-
-    .Upcoming_Events .card_wrapper .card_box_two .card_box_even .event_info h5 {
-        font-size: 25px !important;
-    }
-
-    .Upcoming_Events .card_wrapper .card_box_two .card_box_even .event_info span {
-        right: 10px !important;
-    }
-
-    .tab_section .section-three_tabs {
-        display: unset !important;
-    }
-
-    .section-three_tabs figure {
-        margin-top: 20px;
-    }
-
-    .tab_section .section-three_tabs .info-area {
-        max-width: 100% !important;
-        margin-top: 20px;
-    }
-
-    /* story stream  */
-    .section-two-four .section-four_info h2 {
-        font-size: 30px !important;
-    }
-
-    .section-two-four .section-four_info p {
-        font-size: 14px !important;
-    }
-
-    .flickity-slider {
-        margin-top: 40px;
-    }
-
-    .section-two-four .story-stream-slider .flickity-button.next {
-        top: -25px;
-    }
-
-    .section-two-four .story-stream-slider .flickity-button.previous {
-        top: -25px;
-    }
-
-    .section-two-four .story-stream-slider .flickity-button.next {
-        left: 52% !important;
-    }
-
-    .section-two-four .story-stream-slider .flickity-button.previous {
-        left: 30% !important;
-    }
-
-    /* hot takes  */
-    .hot_takes .flex_box {
-        display: unset !important;
-    }
-
-    .hot_takes .flex_box .long_box .img-info-card figure {
-        margin-top: 20px;
-    }
-
-    .hot_takes .flex_box .long_box .img-info-card article {
-        margin-right: 0 !important;
-    }
-
-    /* in 7 days  */
-    .side_bg1 {
-        background-image: none !important;
-    }
-
-    .side_bg2 {
-        background-image: none !important;
-        height: 0 !important;
-    }
-
-    .side_main_bag {
-        display: unset;
-    }
-
-    .in7day_bg {
-        height: 100%;
-        padding-bottom: 65px;
-    }
-
-    .side_bg1 p {
-        font-size: 30px;
-        margin-left: 0;
-        text-align: center;
-    }
-    .side_click{
-        float: unset;
-        margin: 0;
-        text-align: center;
-        padding-top: 10px;
-    }
-    /* d2c bytes  */
-    .D2C_bytes .flex_box {
-        display: unset;
-    }
-
-    .D2C_bytes .img-info-card {
-        margin-top: 20px;
-    }
-    .D2C_bytes .short_box img{
-        height: 100%;
+    .section-two-four .story-stream-slider .flickity-button.next{
+        left: 36% !important;
     }
     /* brand story  */
     .brand_story{
         height: 100%;
-        padding-bottom: 40px;
     }
-    .register{
-        float: none;
-        transform: unset;
-        margin-top: 35px;
+}
+
+@media (max-width:991px){
+     /* header  */
+     .search-grid .fa-search {
+        display: none !important;
     }
-    .brand_story_header h3 {
-        font-size: 25px;
-        line-height: 40px;
+
+    .search-grid form button {
+        position: relative;
+        left: 210px;
+        top: -42px;
+        border: none;
+        background-color: none !important;
+        background-color: transparent;
     }
-    .perks_joining {
+    
+    .search-grid form button i{
+        font-weight: 900;
+    }
+    .form-control, .form-select{
+        width: 260px !important;
+      
+    }
+    .menu-grid .navToggle{
+        top: 15px !important;
+    }
+ /* Upcoming D2C Events  */
+ .side_bg1 p{
+    font-size: 25px !important;
+ }
+}
+@media (max-width:768px){
+    /* Upcoming_Events */
+    .Upcoming_Events .title{
+        display: unset !important;
+    }
+    .view_more{
+        margin-bottom: 20px;
+    }
+    .Upcoming_Events .card_wrapper{
+        display: unset !important;
+    }
+    .Upcoming_Events .card_wrapper .card_box_one{
+        max-width: 100% !important;
+    }
+    .Upcoming_Events .card_wrapper .card_box_one img{
+        width: 100%;
+    }
+    .Upcoming_Events .card_wrapper .card_box_two{
         margin-top: 20px;
     }
+    .Upcoming_Events .card_wrapper .card_box_two .card_box_even .event_info p{
+        font-size: 15px !important;
+    }
+    .Upcoming_Events .card_wrapper .card_box_two .card_box_even .event_info span{
+        right: 15px !important;
+    }
+
+    /* knowledge base   */
+    .tab_section .section-three_tabs {
+        display: unset !important;
+    }
+    .section-three_tabs figure {
+        margin-top: 20px;
+    }
+    
+    .tab_section .section-three_tabs .info-area {
+        max-width: 100% !important;
+        margin-top: 20px;
+    }
+    /* story stream  */
+    .section-two-four .story-stream-slider .flickity-button.previous {
+        left: 10% !important;
+    }
+    .section-two-four .story-stream-slider .flickity-button.next {
+        left: 20% !important;
+    }
+ /* in 7 days  */
+ .side_bg1 p {
+    font-size: 18px !important;
+}
+    /* D2C bytes  */
+    .custom_height img{
+        height: 100% !important;
+    }
+    .D2C_bytes .short_box img{
+        height: 100%;
+    }
+
+    /* spotlight */
+    .section-seven_slider .brand-slider .slider article{
+        bottom: 12px;
+    }
+}
+@media (min-width:576px) and (max-width:718px){
+    /* register now  */
+    .register_now_wrapper {
+        height: 100% !important;
+    }
+    /* story stream  */
+    .section-four_slider{
+        margin-top: 50px ;
+    }
+    .section-two-four .story-stream-slider .flickity-button.previous {
+        left: 36% !important;
+    }
+    .section-two-four .story-stream-slider .flickity-button.next {
+        left: 50% !important;
+    }
+    .hot_takes .flex_box .long_box .img-info-card article{
+        margin-right: 0 !important;
+    }
+    .section-seven_slider .brand-slider .slider article{
+        font-size: 16px;
+    }
+}
+@media (max-width:575px) {
+
+   
+
+/* knowledge base  */
+.Upcoming_Events {
+    padding-top: 20px !important;
+}
+
+.register_now_wrapper {
+    height: 100% !important;
+}
+
+.register_now_wrapper .details_inner .btn_section {
+    padding-top: 0 !important;
+}
+
+.register_now_wrapper .details_inner .btn_section div {
+    gap: 0 !important;
+}
+
+.register_now_wrapper .details_inner .btn_section button {
+    font-size: 15px !important;
+}
+
+.register_now_wrapper .details_inner .btn_section button:nth-of-type(2) {
+    font-size: 25px !important;
+}
+
+.Upcoming_Events .title div h2 {
+    font-size: 30px !important;
+}
+
+.Upcoming_Events .title {
+    display: unset !important;
+}
+
+.Upcoming_Events .title div p {
+    font-size: 14px !important;
+}
+
+.Upcoming_Events .card_wrapper {
+    display: unset !important;
+}
+
+.Upcoming_Events .card_wrapper .card_box_one {
+    margin-top: 20px;
+}
+
+.Upcoming_Events .card_wrapper .card_box_two .card_box_even {
+    max-height: 100% !important;
+}
+
+.Upcoming_Events .card_wrapper .card_box_two {
+    margin-top: 20px;
+}
+
+.Upcoming_Events .card_wrapper .card_box_two .card_box_even .event_date {
+    padding: 100px 0 120px !important;
+}
+
+.Upcoming_Events .card_wrapper .card_box_two .card_box_even .event_info h5 {
+    font-size: 25px !important;
+}
+
+.Upcoming_Events .card_wrapper .card_box_two .card_box_even .event_info span {
+    right: 10px !important;
+}
+
+
+
+
+
+/* story stream  */
+.section-two-four .section-four_info h2 {
+    font-size: 30px !important;
+}
+
+.section-two-four .section-four_info p {
+    font-size: 14px !important;
+}
+
+.flickity-slider {
+    margin-top: 40px;
+}
+
+.section-two-four .story-stream-slider .flickity-button.next {
+    top: -25px;
+}
+
+.section-two-four .story-stream-slider .flickity-button.previous {
+    top: -25px;
+}
+
+.section-two-four .story-stream-slider .flickity-button.next {
+    left: 52% !important;
+}
+
+.section-two-four .story-stream-slider .flickity-button.previous {
+    left: 30% !important;
+}
+
+/* hot takes  */
+.hot_takes .flex_box {
+    display: unset !important;
+}
+
+.hot_takes .flex_box .long_box .img-info-card figure {
+    margin-top: 20px;
+}
+
+.hot_takes .flex_box .long_box .img-info-card article {
+    margin-right: 0 !important;
+}
+
+/* in 7 days  */
+.side_bg1 {
+    background-image: none !important;
+}
+
+.side_bg2 {
+    background-image: none !important;
+    height: 0 !important;
+}
+
+.side_main_bag {
+    display: unset;
+}
+
+.in7day_bg {
+    height: 100%;
+    padding-bottom: 65px;
+}
+
+.side_bg1 p {
+    font-size: 30px;
+    margin-left: 0;
+    text-align: center;
+}
+
+.side_click {
+    float: unset;
+    margin: 0;
+    text-align: center;
+    padding-top: 10px;
+}
+
+/* d2c bytes  */
+.D2C_bytes .flex_box {
+    display: unset;
+}
+
+.D2C_bytes .img-info-card {
+    margin-top: 20px;
+}
+
+.D2C_bytes .short_box img {
+    height: 100%;
+}
+
+/* brand story  */
+.brand_story {
+    height: 100%;
+    padding-bottom: 40px;
+}
+
+.register {
+    float: none;
+    transform: unset;
+    margin-top: 35px;
+}
+
+.brand_story_header h3 {
+    font-size: 25px;
+    line-height: 40px;
+}
+
+.perks_joining {
+    margin-top: 20px;
+}
+/* spotlight  */
+.spotlight .flickity-enabled.is-draggable .flickity-viewport{
+    height: 250px !important;
+}
+.spotlight .is-selected img{
+    height: 210px;
+}
+.spotlight .section-seven_slider .brand-slider .slider article {
+    font-size: 15px;
+    left: 13px;
+    bottom: 8px;
+}
 }
