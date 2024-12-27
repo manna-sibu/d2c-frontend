@@ -8,12 +8,15 @@ body,html{
     --off-white:#F5F5F5;
     --gray:#808080;
     --white:#fff;
+    --light_black:#515253;
+    --dark-yellow:#7A4A00;
+    --gold-yellow:#F2A32B;
 }
 .border_ele{
     border-left: 4px solid var(--deep-purple);
 }
 .electronics{
-    margin-top: 30px;
+    margin-top: 24px;
 }
 .electronics p{
     font-size: 24px;
@@ -82,4 +85,322 @@ color: var(--gray);
     background-color: var(--off-white);
     padding: 12px 16px;
     border-radius: 8px;
+}
+.boat_content{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* about the brand  */
+.about_brand{
+    margin-top: 32px;
+}
+.brand_flex{
+    display: flex;
+    justify-content: space-between;
+}
+h2{
+    font-size: 40px;
+    line-height: 48px;
+}
+p{
+    font-size: 20px;
+    line-height: 40px !important;
+    font-weight: 500;
+}
+.about_brand h2{
+    font-weight: 700;
+    color: var(--deep-purple);
+}
+.brand_description{
+    width: 620px;
+}
+.brand_description p{
+color: var(--light_black);
+margin-top: 40px;
+}
+.maket_icon a img{
+    border: 2px solid var(--off-white);
+    padding: 6px 24px;
+    border-radius: 50px;
+}
+.icon_section{
+    display: flex;
+    gap: 16px;
+}
+.icon2_section{
+    margin-top: 16px;
+}
+.market_seemore{
+    margin-top: 15px;
+    margin-left: 13px;
+}
+.market_seemore a{
+    padding: 11px 16px;
+    color: var(--off-white);
+    background-color: var(--deep-purple);
+    border-radius: 50px;
+}
+
+/* the story  */
+.the_story{
+    margin-top: 100px;
+    padding-left: 108px;
+}
+.the_story_heading h2{
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    /* width: 272px; */
+}
+.the_story_content{
+    background-color: var(--gold-yellow);
+    border-radius: 48px 0 0 48px ;
+    width: 960px;
+}
+.the_story_content p{
+    color: var(--dark-yellow);
+    padding: 48px 90px 40px 48px;
+}
+.the_story .brand_flex{
+    gap: 139px;
+    justify-content: unset;
+}
+/* milestone  */
+
+.section-seven_slider .brand-slider {
+    margin-bottom: 30px;
+}
+
+.flickity-enabled.is-draggable {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.flickity-enabled {
+    position: relative;
+}
+
+.flickity-enabled.is-draggable .flickity-viewport {
+    cursor: move;
+    cursor: -webkit-grab;
+    cursor: grab;
+}
+
+.flickity-viewport {
+    overflow: hidden;
+    position: relative;
+    height: 100%;
+}
+
+.flickity-slider {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.slideSet .slider,
+.groupSlider .slider,
+.singleSlider .slider {
+    width: 100%;
+}
+
+.section-seven_slider .brand-slider .slider article {
+    font-size: 20px;
+    line-height: 32px;
+    font-weight: 500;
+    /* position: absolute; */
+    max-width: 357px;
+    color: var(--light_black);
+    left: 35px;
+    bottom: 35px;
+}
+
+.slideSet .slider,
+.groupSlider .slider,
+.singleSlider .slider {
+    width: 100%;
+}
+
+.section-seven_slider .brand-slider .flickity-button.previous {
+    background: url(../images/prev-arrow2\ \(1\).png) center center no-repeat;
+    width: 33px;
+    height: 33px;
+    border: none;
+}
+
+.section-seven_slider .brand-slider .flickity-button.next {
+    background: url(../images/next-arrow2.png) center center no-repeat;
+    width: 33px;
+    height: 33px;
+    border: none;
+}
+
+.section-seven_slider .brand-slider .flickity-page-dots {
+    bottom: 0;
+    display: none;
+}
+
+.flickity-page-dots {
+    position: absolute;
+    width: 100%;
+    bottom: -25px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+    line-height: 1;
+}
+
+.flickity-page-dots .dot.is-selected {
+    opacity: 1;
+}
+
+.flickity-page-dots .dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 8px;
+    background: #333;
+    border-radius: 50%;
+    opacity: .25;
+    cursor: pointer;
+}
+
+.section-seven .brand-slider_info {
+    padding: 0 0 0 30px;
+}
+
+.section-seven .brand-slider_info p {
+    margin-bottom: 0;
+}
+
+.container:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.body-wrap:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.flickity-prev-next-button {
+    top: 50%;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    transform: translateY(-50%);
+}
+
+.flickity-button {
+    position: absolute;
+    background: rgba(255, 255, 255, .75);
+    border: none;
+    color: #333;
+}
+
+.flickity-prev-next-button.next {
+    right: 10px;
+}
+
+.flickity-button-icon {
+    fill: var(--violet);
+}
+
+img,
+svg {
+    vertical-align: middle;
+    max-width: 100%;
+    height: auto;
+}
+
+img,
+svg {
+    vertical-align: middle;
+}
+
+.brand-slider_info p {
+    color: #515253;
+}
+.milestone .slider img{
+    width: 176px;
+    height: 124px;
+}
+
+/* Team  */
+.team .brand_flex{
+    gap: 80px;
+    justify-content: unset;
+}
+.team_card{
+    background-color: var(--deep-purple);
+    width: fit-content;
+    border-radius: 8px;
+  margin-left: 80px;
+}
+.member_details{
+    padding: 20px 55px 58px 80px;
+}
+.member_name{
+    display: flex;
+}
+.member_name h3{
+    color: var(--off-white);
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+.member_position p{
+    /* margin-top: 10px; */
+    color: var(--off-white);
+    font-size: 16px;
+    line-height: 20px;
+    margin-left: 28px;
+    font-weight: 500;
+}
+.member_description{
+    margin-left: 40px;
+}
+.member_description p{
+    font-size: 16px;
+    line-height: 24px !important;
+    font-weight: 500;
+    color: var(--off-white);
+    width: 251px;
+}
+.member_view{
+    float: right;
+    transform: translateY(45px);
+}
+.member_view a{
+    color: var(--deep-purple);
+    background-color: var(--off-white);
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+    padding: 8px 24px;
+    border-radius: 8px;
+}
+.team_img{
+    position: absolute;
+    left: -45px;
+    top: -59px;
+}
+.team_img img{
+    width: 270px;
+    height: 300px;
+}
+.team_section{
+    display: flex;
+    margin-top: 55px;
+    position: relative;
+}
+.team_heading{
+    padding-left: 108px;
 }
