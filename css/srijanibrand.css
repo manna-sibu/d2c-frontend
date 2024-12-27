@@ -376,7 +376,7 @@ svg {
 }
 .member_view{
     float: right;
-    transform: translateY(45px);
+    transform: translate(27px, 43px);
 }
 .member_view a{
     color: var(--deep-purple);
@@ -404,3 +404,102 @@ svg {
 .team_heading{
     padding-left: 108px;
 }
+.member_name_two{
+    float: right;
+}
+.member_position_two p{
+    margin-top: 10px; 
+    color: var(--off-white);
+    font-size: 16px;
+    line-height: 20px;
+    margin-left: 97px;
+    font-weight: 500;
+}
+.member_des_two{
+    text-align: right;
+    margin-left: 0;
+    margin-right: 34px;
+}
+.member_view_two{
+    float: left;
+    transform: translate(-48px, 42px);
+}
+.team_img2{
+    left: unset;
+    right: -158px;
+}
+.team_sectn2{
+    margin-top: 108px;
+}
+.team_card_two{
+    margin-left: 156px;
+}
+
+/* latest buzz  */
+.latest_buzz{
+    margin-top: 108px;
+}
+.launch_header h2{
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 600;
+    padding-right:10px;
+    width: 519px;
+}
+.launch_content{
+    width: 716px;
+}
+.launch_content p{
+    font-size: 16px;
+    line-height: 28px !important;
+    font-weight: 500;
+    color: var(--light_black) !important;
+    cursor:auto;
+}
+.buzz_short_box{
+    display: flex;
+    gap: 24px;
+   
+}
+.buzz_gap{
+    margin-top: 48px;
+}
+.buzz_short_box img{
+    width: 148px;
+    height: 132px;
+}
+.short_details{
+    width: 218px;
+}
+.short_details p{
+    font-size: 16px;
+    line-height: 20px !important;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.short_details a{
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 600;
+}
+.buzz_left_content a h2{
+    width: 519px;
+    font-size: 24px;
+    line-height: 32px;
+}
+ /* Achievements  */
+ .achievements{
+    margin-top: 124px;
+    background-color: var(--deep-purple);
+    height: 460px;
+    width: 100%;
+ }
+ .achievement_header{
+    text-align: center;
+ }
+ .achievement_header h2{
+    color: var(--white);
+ }
+ .achievement_header p{
+    color: var(--off-white);
+ }
