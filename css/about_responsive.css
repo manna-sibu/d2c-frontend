@@ -1,0 +1,257 @@
+/* flex box section start */
+
+@media(max-width:1200px) {
+
+    .abut_wrapper .how_to_support .title h6{
+        margin-top: -40px !important;
+    }
+
+    .abut_wrapper .our_team .team_section img {
+        width: 300px;
+        height: 400px;
+    }
+
+    .abut_wrapper .our_team .team_section img:nth-child(2) {
+        padding-top: 90px;
+        width: 365px;
+        height: 400px;
+
+    }
+}
+
+@media(max-width:992px) {
+    .text_who_are img {
+        width: 250px;
+    }
+
+    .abut_wrapper .who_are_we .text_who_are h4 {
+        font-size: 100px;
+    }
+
+    .abut_wrapper .who_are_we .text_who_are p {
+
+        line-height: 36px !important;
+        font-size: 18px
+    }
+
+    .abut_wrapper .who_are_we .text_who_are h6 {
+        margin-bottom: 0px !important;
+    }
+
+    .abut_wrapper .how_to_support {
+
+        padding-top: 0px;
+    }
+
+
+    .abut_wrapper .how_to_support .title {
+
+        padding-bottom: 10px;
+    }
+
+    .abut_wrapper .how_to_support .content .card_for_support {
+
+        padding: 40px 0px;
+    }
+
+
+    .abut_wrapper .how_to_support .content .card_for_support .support_card p {
+
+        line-height: 34px !important;
+        font-size: 18px;
+        margin-bottom: 0;
+    }
+
+    .abut_wrapper .our_team {
+
+        padding-top: 40px;
+    }
+
+
+    .abut_wrapper .our_team .title p {
+        font-size: 22px;
+    }
+
+    .abut_wrapper .our_team .details_section p {
+        line-height: 36px !important;
+        font-size: 18px;
+        margin-bottom: 0;
+    }
+
+    .abut_wrapper .our_team .details p {
+
+        line-height: 36px !important;
+        font-size: 18px;
+    }
+    .abut_wrapper .our_team .team_section{
+        display: block;
+        margin-top: 0;
+    }
+    .team_section{
+        display: block;
+    }
+    .abut_wrapper .our_team .team_section img:nth-child(2) {
+        padding-top: 0;
+        margin-left: 40px;
+    }
+
+    .abut_wrapper .our_team .vineet {
+
+        padding-top: 0px;
+    }
+
+
+    .abut_wrapper .our_team .vineet .vineet_details {
+        margin-top: -60px;
+    }
+
+    .abut_wrapper .our_team .vineet .vineet_details p {
+        line-height: 36px !important;
+        font-size: 18px;
+    }
+
+   
+}
+
+@media(max-width:768px) {
+
+    .abut_wrapper .who_are_we .text_who_are p,
+    .abut_wrapper .how_to_support .content .card_for_support .support_card p,
+    .abut_wrapper .our_team .details_section p,
+    .abut_wrapper .our_team .details p,
+    .abut_wrapper .our_team .vineet .vineet_details p   , 
+     .abut_wrapper .our_team .title p{
+        line-height: 30px !important;
+        text-align: left;
+    }
+    .abut_wrapper .how_to_support .content .card_for_support .support_card p{
+        text-align: center !important;
+    }
+
+
+    .abut_wrapper .who_are_we .blank_div {
+        display: none;
+    }
+
+    .text_who_are img {
+        width: 180px;
+    }
+
+    .abut_wrapper .who_are_we .text_who_are h4 {
+        font-size: 70px;
+    }
+
+
+    .abut_wrapper .who_are_we .text_who_are p {
+        line-height: 30px !important;
+        font-size: 18px;
+        padding-top: 20px;
+
+    }
+
+    .abut_wrapper .who_are_we .text_who_are h6 {
+        font-size: 28px;
+        padding-top: 30px;
+    }
+
+    .abut_wrapper .how_to_support .title h6 , 
+    .abut_wrapper .our_team .title h6 {
+        font-size: 36px;
+        letter-spacing: 0;
+    }
+
+    .abut_wrapper .how_to_support .content .card_for_support .support_card {
+        max-width: 300px;
+    }
+
+    .abut_wrapper .our_team .vineet .vineet_details{
+        margin-top: -40px;
+    }
+
+}
+
+
+@media(max-width:732px){
+    .abut_wrapper .our_team .team_section img:nth-child(2){
+        margin-left: 0;
+    }
+}
+
+@media(max-width:576px){
+
+    .abut_wrapper .who_are_we .text_who_are p,
+    .abut_wrapper .how_to_support .content .card_for_support .support_card p,
+    .abut_wrapper .our_team .details_section p,
+    .abut_wrapper .our_team .details p,
+    .abut_wrapper .our_team .vineet .vineet_details p   , 
+     .abut_wrapper .our_team .title p{
+        line-height: 28px !important;
+        text-align: left;
+    }
+
+    .text_who_are img{
+        width: 140px;
+    }
+    .abut_wrapper .who_are_we .text_who_are h4{
+        font-size: 50px;
+        letter-spacing: 7px;
+
+    }
+
+    .abut_wrapper .who_are_we .text_who_are p{
+        padding-top: 0;
+    }
+
+    .abut_wrapper .who_are_we .text_who_are h6{
+        font-size: 24px;
+    }
+
+    .abut_wrapper .how_to_support .title h6 , 
+    .abut_wrapper .our_team .title h6 {
+        font-size: 36px;
+        letter-spacing: 0;
+    }
+    .abut_wrapper .our_team .details_section p {
+     margin-bottom: 0;
+     padding: 0;
+    }
+
+    .abut_wrapper .our_team .details{
+        padding-top: 40px;
+    }
+
+    .abut_wrapper .our_team .team_section img  ,
+    .abut_wrapper .our_team .team_section img:nth-child(2){
+        width: 300px;
+        height: 340px;
+
+    }
+
+    .abut_wrapper .our_team .vineet .vineet_details p {
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+
+}
+
+@media(max-width:425px){
+
+    .text_who_are img {
+        width: 120px;
+    }
+
+    .abut_wrapper .who_are_we .text_who_are h4 {
+        font-size: 40px;
+        letter-spacing: 5px;
+    }
+
+    .abut_wrapper .our_team .team_section img , 
+.abut_wrapper .our_team .team_section img:nth-child(2){
+        width: 300px;
+        height: 300px;
+
+   
+}
+}
+
+/* flex box section end */
