@@ -9,6 +9,7 @@ body,html{
     --gray:#808080;
     --white:#fff;
     --light_black:#515253;
+    --gray:#606060;
     --dark-yellow:#7A4A00;
     --gold-yellow:#F2A32B;
 }
@@ -489,6 +490,9 @@ svg {
 }
  /* Achievements  */
  .achievements{
+    padding-bottom: 190px;
+ }
+ .achieve_content{
     margin-top: 124px;
     background-color: var(--deep-purple);
     height: 460px;
@@ -496,10 +500,94 @@ svg {
  }
  .achievement_header{
     text-align: center;
+    padding-top: 48px;
  }
  .achievement_header h2{
     color: var(--white);
  }
  .achievement_header p{
     color: var(--off-white);
+    margin-top: 40px;
+    font-weight: 500;
+    padding: 0 48px;
+ }
+ .acieve_img img{
+    width: 220px;
+    height: 200px;
+}
+ .achievement_box{
+    display: flex;
+    gap: 59px;
+    padding: 0 64px;
+   
+ }
+ .achievement_all_box{
+    transform: translateY(70px);
+ }
+ .achievement_short_box{
+    text-align: center;
+ }
+ .achievement_short_box p{
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 500 !important;
+    color: var(--gray);
+    margin-bottom: 0;
+    margin-top: 32px;
+ }
+ .achieve_view {
+    text-align: center;
+    margin-top: 48px;
+ }
+ .achieve_view a{
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 600;
+    color: var(--off-white);
+    background-color: var(--deep-purple);
+    padding: 12px 108px;
+    border-radius: 8px;
+ }
+ .achieve_weight{
+    font-weight: 600;
+ }
+
+ /* Roadmap  */
+ .roadmap{
+    margin-top: 120px;
+    position: relative;
+ }
+.roadmap_header_color{
+    background-color: var(--gold-yellow);
+    width: 245px;
+    height: 150px;
+    position: absolute;
+    left: -112px;
+    top: -50px;
+}
+ .roadmap_header span{
+    color: var(--white);
+ }
+ .roadmap_points{
+    margin-top: 72px;
+    padding: 0 160px 0 139px;
+ }
+ .roadmap_points li{
+    font-size: 20px;
+    line-height: 40px;
+    font-weight: 500;
+    list-style: disc;
+   
+ }
+ .roadmap_gap{
+    margin-top: 40px;
+ }
+ .roadmap_sidecolor{
+    background-color: var(--gold-yellow);
+    height: 300px;
+    width: 135px;
+    position: absolute;
+    top: 77px;
+    left: -111px;
+    
  }
