@@ -559,18 +559,21 @@ svg {
  }
 .roadmap_header_color{
     background-color: var(--gold-yellow);
-    width: 245px;
+    width: 216px;
     height: 150px;
     position: absolute;
-    left: -112px;
+    left: -64px;
     top: -50px;
 }
  .roadmap_header span{
     color: var(--white);
  }
+ .roadmap_header h2{
+    white-space: pre;
+ }
  .roadmap_points{
     margin-top: 72px;
-    padding: 0 160px 0 139px;
+    padding: 0 41px 0 65px;
  }
  .roadmap_points li{
     font-size: 20px;
@@ -585,9 +588,14 @@ svg {
  .roadmap_sidecolor{
     background-color: var(--gold-yellow);
     height: 300px;
-    width: 135px;
+    width: 85px;
     position: absolute;
     top: 77px;
-    left: -111px;
+    left: -63px;
     
+ }
+
+ /* Customer Review  */
+ .customer_review_header{
+    margin-top: 108px;
  }
