@@ -1,0 +1,215 @@
+@media (max-width:1280px){
+    /* team  */
+    .team_card_two {
+        margin-left: 122px;
+    }
+}
+@media (max-width:1024px){
+    /* about the brand  */
+    .market_seemore{
+        margin-left: 0;
+    }
+
+    /* the story  */
+    .the_story .brand_flex{
+        display: inline-block;
+    }
+    .the_story_content{
+        margin-top: 35px;
+    }
+    .member_details {
+        padding: 20px 36px 23px 48px;
+    }
+    .team_img img {
+        width: 218px;
+        height: 267px;
+    }
+    .member_view_two{
+        transform: translate(-30px, 10px) !important;
+    }
+    .member_view {
+        transform: translate(14px, 12px);
+    }
+    /* latest buzz  */
+    .latest_buzz .brand_flex{
+        display: block;
+    }
+    .left_img img{
+        width: 100%;
+    }
+    .buzz_right{
+        display: flex;
+        justify-content:space-between;
+    }
+    .buzz_short_box{
+        display: block;
+    }
+    .buzz_gap{
+        margin-top: 0;
+    }
+    .buzz_short_box img {
+        width: 100%;
+        height: 147px;
+    }
+}
+@media (max-width:991px){
+    .rating_section{
+        display: inline-block;
+    }
+    .connect_button a {
+        padding: 12px 11px;
+        font-size: 13px;
+    }
+    .about_brand .brand_flex{
+        display: inline-block;
+    }
+    .brand_description{
+        width: 100%;
+    }
+    .the_story{
+        padding-left: 35px;
+    }
+    .the_story_content{
+        width: 100%;
+    }
+    .team .brand_flex{
+        display: inline-block;
+        margin-left: 122px;
+    }
+    .team_card_two{
+        margin-left: 0;
+    }
+    .team_img img{
+        height: 256px;
+    }
+    .team_img2{
+        right: -120px;
+    }
+    .buzz_short_box img {
+        height: 115px;
+    }
+    .acieve_img img{
+        height: 160px;
+    }
+    .achievement_box{
+        padding: 0;
+    }
+    .buzz_left_content{
+        margin-top: 15px;
+    }
+    .short_details{
+        margin-top: 15px;
+    }
+    .achieve_content {
+        margin-top: 50px;
+    }
+    .roadmap_points {
+        padding: 0 25px 0 25px;
+    }
+    .achievement_all_box {
+        transform: translateY(30px);
+    }
+}
+@media (max-width:768px){
+    .rating_para {
+        display: inline-block;
+        margin-top: 20px;
+    }
+    .rating_para p{
+        margin-bottom: 0;
+    }
+    .review{
+        margin-left: 0;
+        margin-top: 0;
+    }
+    .connect_button a{
+        font-size: 10px;
+    }
+}
+@media (max-width:575px){
+    /* boat description  */
+    .boat_content{
+        display: inline-block;
+    }
+    .rating_para{
+        display: flex;
+        gap: 20px;
+    }
+    .connect_button a {
+        padding: 12px 20px;
+        font-size: 13px;
+    }
+    .connect{
+        margin-top: 25px;
+    }
+    .boat_right{
+        margin-top: 40px;
+    }
+    /* the story  */
+    .the_story_content p {
+        padding: 48px 15px 40px 20px;
+    }
+    .the_story {
+        padding-left: 20px;
+    }
+    /* Latest Buzz  */
+    .buzz_left_content a h2{
+        width: 100%;
+    }
+    .launch_content{
+        width: 100%;
+    }
+    .buzz_right{
+        display: block;
+    }
+    .buzz_short_box img{
+        height: 100%;
+    }
+    .short_details {
+        width: 100%;
+    }
+    .buzz_gap {
+        margin-top: 20px;
+    }
+
+    /* Achievement  */
+    .achieve_content{
+        height: 100%;
+    }
+    .achievement_header p{
+        margin-top: 20px;
+        padding: 0;
+    }
+    .achievement_box{
+        display: inline-block;
+    }
+    .acieve_img img {
+        height: 100%;
+        width: 100%;
+    }
+    .achievement_short_box p{
+        margin-top: 8px;
+        color: white;
+    }
+    .achieve_weight{
+        color: white;
+    }
+    .achievement_short_box{
+        margin-top: 20px;
+    }
+    .achieve_view {
+        transform: translateY(22px);
+    }
+    .achievements{
+        padding-bottom: 0;
+    }
+    .roadmap {
+        padding-top: 170px;
+    }
+    .roadmap_header_color{
+        width: 182px;
+    }
+    .roadmap_sidecolor{
+        height: 100%;
+    }
+}
