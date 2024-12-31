@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="images/favicon.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+
+    <!-- META -->
+    <meta name="description" content="" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:title" content="" />
+    <meta property="og:description" content="" />
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="" />
+    <meta name="twitter:title" content="" />
+    <meta name="twitter:description" content="" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/srijani.css">
+    <link rel="stylesheet" href="css/fontawesome-6.6-all.css">
+    <link rel="stylesheet" href="dist/css/style.css" />
+
+    <!-- font-family: "DM Sans", sans-serif; -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+        rel="stylesheet">
+
+
+    <!-- SCRIPT -->
+    <script src="scripts/jquery-3.7.1.min.js"></script>
+    <script src="scripts/bootstrap.bundle.min.js"></script>
+    <script src="scripts/flickity.min.js"></script>
+    <script src="scripts/function.js"></script>
+
+
+    <title>D2C</title>
+
+    <style>
+        #coming_soon {
+            background-size: contain;
+            background-position: center;
+            height: 100vh;
+            background-repeat: no-repeat;
+            position: relative;
+        }
+
+        #timer {
+            font-size: 4em;
+            color: #613385;
+            text-transform: lowercase;
+            width: 600px;
+            text-align: center;
+            font-weight: 900;
+            border: 1px dashed;
+            border-radius: 8px;
+            padding: 10px;
+            margin: auto;
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 5%;
+        }
+
+        .finished {
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <section id="coming_soon" style="background-image: url(images/Homepage.svg);">
+        <div id="timer">Loading...</div>
+    </section>
+</body>
+<script>
+    $(document).ready(function () {
+        // Countdown target date
+        const targetDate = new Date("2025-01-11T00:00:00").getTime();
+
+        function updateTimer() {
+            const now = new Date().getTime();
+            const timeLeft = targetDate - now;
+
+            if (timeLeft > 0) {
+                const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+
+                $("#timer").text(`${days}d ${hours}h ${minutes}m ${seconds}s`);
+            } else {
+                $("#timer").text("Countdown finished!").addClass("finished");
+                clearInterval(timerInterval);
+            }
+        }
+
+        // Update every second
+        const timerInterval = setInterval(updateTimer, 1000);
+        updateTimer(); // Run once immediately
+    });
+</script>
+
+</html>
