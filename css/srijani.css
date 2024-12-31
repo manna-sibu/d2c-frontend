@@ -29,7 +29,7 @@
 }
 
 .nirvana_font {
-    font-size: 20px !important;
+    font-size: 18px !important;
 }
 
 /* in 7 days  */
@@ -476,6 +476,9 @@ svg {
     .menu-grid .navToggle{
         top: 15px !important;
     }
+    /* .custom_height img {
+        height: 335px !important;
+    } */
  /* Upcoming D2C Events  */
  .side_bg1 p{
     font-size: 22px !important;
@@ -590,6 +593,7 @@ svg {
 
 .register_now_wrapper .details_inner .btn_section button {
     font-size: 15px !important;
+    padding: 6px 10px !important;
 }
 
 .register_now_wrapper .details_inner .btn_section button:nth-of-type(2) {
@@ -597,7 +601,7 @@ svg {
 }
 
 .Upcoming_Events .title div h2 {
-    font-size: 30px !important;
+    font-size: 28px !important;
 }
 
 .Upcoming_Events .title {
@@ -635,6 +639,9 @@ svg {
 .Upcoming_Events .card_wrapper .card_box_two .card_box_even .event_info span {
     right: 10px !important;
 }
+.Upcoming_Events .card_wrapper .card_box_two .card_box_even .event_info{
+    padding: 18px 0 30px 17px !important;
+}
 
 
 .Upcoming_Events .card_wrapper .card_box_two .card_box_even .event_date .date_month .date_month_wrapper .month {
@@ -646,6 +653,9 @@ svg {
 
 
 /* story stream  */
+.section-two-four{
+    padding-top: 25px !important;
+}
 .section-two-four .section-four_info h2 {
     font-size: 30px !important;
 }
@@ -686,11 +696,22 @@ svg {
 .hot_takes .flex_box .long_box .img-info-card article {
     margin-right: 0 !important;
 }
-
+.hot_takes .flickity-slider{
+    margin-top: 0;
+}
+.hot_takes .flex_box .long_box .img-info-card article h4{
+    font-size: 18px;
+}
+.side_bg1 p{
+    margin-top: 0;
+}
+.side_click a{
+    padding: 6px 15px;
+}
 /* in 7 days  */
 .side_bg1 {
     background-image: none !important;
-    height: 58px;
+    height: 58px !important;
 }
 
 .side_bg2 {
@@ -732,7 +753,9 @@ svg {
 .D2C_bytes .short_box img {
     height: 100%;
 }
-
+.D2C_bytes h4 {
+    font-size: 16px;
+}
 /* brand story  */
 .brand_story {
     height: 100%;
@@ -747,7 +770,7 @@ svg {
 
 .brand_story_header h3 {
     font-size: 25px;
-    line-height: 40px;
+    line-height: 35px;
 }
 
 .perks_joining {
@@ -764,5 +787,8 @@ svg {
     font-size: 15px;
     left: 13px;
     bottom: 8px;
+}
+.spotlight .flickity-slider{
+    margin-top: 0;
 }
 }
