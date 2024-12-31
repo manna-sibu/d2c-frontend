@@ -197,7 +197,6 @@ p {
 
 .the_story .brand_flex {
     gap: 139px;
-    justify-content: unset;
 }
 
 /* milestone  */
@@ -370,10 +369,12 @@ svg {
 
 /* Team  */
 .team .brand_flex {
-    gap: 80px;
+    gap: 120px;
     justify-content: unset;
 }
-
+.last_child_brand{
+    justify-content: right !important;
+}
 .team_card {
     background-color: var(--deep-purple);
     width: fit-content;
@@ -745,7 +746,8 @@ svg {
     font-size: 24px;
 
 }
-.review_first{
+
+.review_first {
     margin-top: 48px;
 }
 
@@ -781,11 +783,13 @@ svg {
     /* border-bottom: 1px solid var(--gray); */
     width: fit-content;
 }
-.reviewer_border{
+
+.reviewer_border {
     border-bottom: 1px solid var(--off-white);
     width: 200px;
     height: auto;
 }
+
 .review_icon ul {
     display: flex;
     gap: 119px;
@@ -799,15 +803,18 @@ svg {
     border: 1px solid var(--off-white);
     border-radius: 8px;
 }
-.review_section{
+
+.review_section {
     display: flex;
     gap: 40px;
 }
-.review_short_box{
+
+.review_short_box {
     box-shadow: 0px 0px 8px 0px #00000033;
-border: 1px solid var(--off-white);
-padding: 32px;
+    border: 1px solid var(--off-white);
+    padding: 32px;
 }
-.review_short_two{
+
+.review_short_two {
     margin-top: 40px;
 }
