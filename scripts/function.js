@@ -91,6 +91,8 @@ $(function(){
         });
     };
 
+   
+
     // Group Slider
     if ($('.group-slider').length > 0) {
 
@@ -199,7 +201,21 @@ if($('.slider_bx').length > 4){
     });
 };
 
+// milestone slider 
 
+$(document).ready(function () {
+    $('.milestone_box_slider').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        arrows: true,
+        dots: false,
+        speed: 300,
+        centerPadding: '10px',
+        infinite: true,
+        autoplaySpeed: 5000,
+        autoplay: false
+    });
+});
 
 
 

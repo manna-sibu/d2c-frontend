@@ -200,174 +200,57 @@ p {
 }
 
 /* milestone  */
-
-.section-seven_slider .brand-slider {
-    margin-bottom: 30px;
+.milestone{
+    margin-top: 100px;
+}
+.milestone_short{
+    display: flex !important;
+    margin-top: 55px;
+}
+.milestone_img{
+    border-bottom: 0.5px solid var(--deep-purple);
 }
 
-.flickity-enabled.is-draggable {
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
-
-.flickity-enabled {
-    position: relative;
-}
-
-.flickity-enabled.is-draggable .flickity-viewport {
-    cursor: move;
-    cursor: -webkit-grab;
-    cursor: grab;
-}
-
-.flickity-viewport {
-    overflow: hidden;
-    position: relative;
-    height: 100%;
-}
-
-.flickity-slider {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-}
-
-.slideSet .slider,
-.groupSlider .slider,
-.singleSlider .slider {
-    width: 100%;
-}
-
-.section-seven_slider .brand-slider .slider article {
-    font-size: 20px;
-    line-height: 32px;
-    font-weight: 500;
-    /* position: absolute; */
-    max-width: 357px;
-    color: var(--light_black);
-    left: 35px;
-    bottom: 35px;
-}
-
-.slideSet .slider,
-.groupSlider .slider,
-.singleSlider .slider {
-    width: 100%;
-}
-
-.section-seven_slider .brand-slider .flickity-button.previous {
-    background: url(../images/prev-arrow2\ \(1\).png) center center no-repeat;
-    width: 33px;
-    height: 33px;
-    border: none;
-}
-
-.section-seven_slider .brand-slider .flickity-button.next {
-    background: url(../images/next-arrow2.png) center center no-repeat;
-    width: 33px;
-    height: 33px;
-    border: none;
-}
-
-.section-seven_slider .brand-slider .flickity-page-dots {
-    bottom: 0;
-    display: none;
-}
-
-.flickity-page-dots {
-    position: absolute;
-    width: 100%;
-    bottom: -25px;
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    text-align: center;
-    line-height: 1;
-}
-
-.flickity-page-dots .dot.is-selected {
-    opacity: 1;
-}
-
-.flickity-page-dots .dot {
-    display: inline-block;
-    width: 10px;
-    height: 10px;
-    margin: 0 8px;
-    background: #333;
-    border-radius: 50%;
-    opacity: .25;
-    cursor: pointer;
-}
-
-.section-seven .brand-slider_info {
-    padding: 0 0 0 30px;
-}
-
-.section-seven .brand-slider_info p {
-    margin-bottom: 0;
-}
-
-.container:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-.body-wrap:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-.flickity-prev-next-button {
-    top: 50%;
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    transform: translateY(-50%);
-}
-
-.flickity-button {
-    position: absolute;
-    background: rgba(255, 255, 255, .75);
-    border: none;
-    color: #333;
-}
-
-.flickity-prev-next-button.next {
-    right: 10px;
-}
-
-.flickity-button-icon {
-    fill: var(--violet);
-}
-
-img,
-svg {
-    vertical-align: middle;
-    max-width: 100%;
-    height: auto;
-}
-
-img,
-svg {
-    vertical-align: middle;
-}
-
-.brand-slider_info p {
-    color: #515253;
-}
-
-.milestone .slider img {
-    width: 176px;
+.milestone_img img{
     height: 124px;
+    width: 176px;
+    border-radius: 8px;
 }
+
+.slider_year p{
+    transform: rotate(-90deg);
+    margin-top: 115px;
+    font-size: 48px;
+    line-height: 48px !important;
+    font-weight: 800;
+    color: var(--deep-purple);
+}
+.milestone_img article{
+    margin-top: 20px;
+    font-size: 19px;
+    line-height: 32px;
+    color: var(--light_black);
+    padding-bottom: 40px;
+}
+.milestone_box_slider .slick-slide {
+    /* background-color: #b32532; */
+    /* color: #FFF; */
+    /* height: 200px; */
+    margin: 0 15px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: scale(0.9);
+    transition: all 0.4s ease-in-out;
+}
+
+
+
 
 /* Team  */
+.team{
+    margin-top: 100px;
+}
 .team .brand_flex {
     gap: 120px;
     justify-content: unset;
@@ -778,7 +661,7 @@ svg {
     margin-top: 24px;
 
 }
-.review_border p{
+.review_border{
     padding-bottom: 30px;
 }
 .reviewer_commemnt {
@@ -820,3 +703,25 @@ svg {
 .review_short_two {
     margin-top: 40px;
 }
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+    background-color: var(--deep-purple);
+    border-radius: 20px;
+    padding: 8px 32px;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+}
+.nav-pills .nav-link{
+    color: var(--deep-purple);
+    border: 1px solid var(--deep-purple);
+    border-radius: 20px;
+    padding: 8px 32px;
+}
+.custom_gap{
+    margin-left: 20px;
+}
+.custom_button{
+    display: flex;
+    justify-content: space-between;
+}
+ 

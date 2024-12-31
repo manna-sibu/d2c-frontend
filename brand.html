@@ -28,6 +28,9 @@
     <link rel="stylesheet" href="dist/css/style.css" />
     <link rel="stylesheet" href="css/brand_responsive.css">
     <link rel="stylesheet" href="css/srijani.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+
 
     <!-- font-family: "DM Sans", sans-serif; -->
     <link
@@ -40,6 +43,8 @@
     <script src="scripts/bootstrap.bundle.min.js"></script>
     <script src="scripts/flickity.min.js"></script>
     <script src="scripts/function.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"></script>
 
 
     <title>D2C-brand</title>
@@ -341,28 +346,66 @@
         </section>
         <!-- the story end  -->
         <!-- milestone start  -->
-        <section class="milestone the_story">
-            <div class="section-seven_slider">
-                <div class="brand-slider singleSlider">
-                    <div class="slider">
-                        <figure><img src="images/milestone1.jfif" alt="brand-slider-img"></figure>
-                        <article>
-                            Founded by Aman Gupta and
-                            Sameer Mehta, focusing on affordable
-                        </article>
-                        <p>2016</p>
+        <section class="milestone">
+           
+            <div class="container">
+                <div class="milestone_header">
+                    <h2>Milestones</h2>
+                </div>
+                <div class="milestone_box_slider">
+                    <div class="milestone_short">
+                        <div class="slider_year">
+                            <p>2016</p>
+                        </div>
+                        <div class="milestone_img">
+                            <figure><img src="images/milestone1.jfif" alt=""></figure>
+                            <article>Founded by Aman Gupta and
+                                Sameer Mehta, focusing on affordable</article>
+                        </div>
                     </div>
-                    <div class="slider">
-                        <figure><img src="images/sugar.jfif" alt="brand-slider-img"></figure>
-                        <article>
-                            How Sugar Cosmetics
-                            Transformed India's Beauty
-                            Industry: An Inspiring Story
-                            and Business Insights
-                        </article>
+
+                    <div class="milestone_short">
+                        <div class="slider_year">
+                            <p>2018</p>
+                        </div>
+                        <div class="milestone_img">
+                            <figure><img src="images/milestone2.png" alt=""></figure>
+                            <article>Reached 1 million users;
+                                became a top audio brand in India.</article>
+                        </div>
+                    </div>
+
+                    <div class="milestone_short">
+                        <div class="slider_year">
+                            <p>2020</p>
+                        </div>
+                        <div class="milestone_img">
+                            <figure><img src="images/milestone1.jfif" alt=""></figure>
+                            <article>Growth surged during the pandemic,
+                                becoming India’s audio market leader.</article>
+                        </div>
+                    </div>
+                    <div class="milestone_short">
+                        <div class="slider_year">
+                            <p>2019</p>
+                        </div>
+                        <div class="milestone_img">
+                            <figure><img src="images/milestone3.png" alt=""></figure>
+                            <article>Expanded into wearables;
+                                ranked among India’s top 5 audio brands.</article>
+                        </div>
+                    </div>
+                    <div class="milestone_short">
+                        <div class="slider_year">
+                            <p>2017</p>
+                        </div>
+                        <div class="milestone_img">
+                            <figure><img src="images/milestone1.jfif" alt=""></figure>
+                            <article>Launched its first products,
+                                gaining popularity for durability and design.</article>
+                        </div>
                     </div>
                 </div>
-
             </div>
         </section>
         <!-- milestone end  -->
@@ -705,26 +748,29 @@
             <div class="customer_review_header">
                 <h2>Customers’ Review</h2>
             </div>
-            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
-                        data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
-                        aria-selected="true">Home</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
-                        data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
-                        aria-selected="false">Profile</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill"
-                        data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact"
-                        aria-selected="false">Contact</button>
-                </li>
+            <div class="custom_button">
+                <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                            aria-selected="true">Recent</button>
+                    </li>
+                    <li class="nav-item custom_gap" role="presentation">
+                        <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
+                            aria-selected="false">Top Rated</button>
+                    </li>
+                    <li class="nav-item custom_gap" role="presentation">
+                        <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact"
+                            aria-selected="false">Most Loved</button>
+                    </li>
+                </ul>
+                
                 <div class="filter">
                     <a href="#">Filter</a>
                 </div>
-            </ul>
+            </div>
             <div class="tab-content" id="pills-tabContent">
                 <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
                     <div class="review_section">
@@ -952,7 +998,7 @@
                                     <li><i class="fa fa-star"></i></li>
                                 </ul>
                             </div>
-                            <div class="reviewer_commemnt review_border">
+                            <div class="reviewer_commemnt">
                                 <p>Amet minim mollit non deserunt ullamco est sit aliqua
                                     dolor do amet sint. Velit officia consequat duis enim
                                     velit mollit. Exercitation veniam consequat.</p>
@@ -1010,7 +1056,7 @@
                                         aliqua dolor do amet sint. Velit officia consequat
                                         duis enim velit mollit. Exercitation veniam const.</p>
                                 </div>
-                                
+
                                 <div class="review_icon">
                                     <ul>
                                         <li><a href="#"><img src="images/Vector.png" alt=""></a></li>
