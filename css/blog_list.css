@@ -301,34 +301,26 @@ body {
     margin-bottom: 60px;
 }
 
-.categoies_slider_wrapper .flickity-page-dots {
-    display: none !important;
-}
-.categories_slider .slider_bx {
-    position: relative;
-}
-
-.categories_slider .slider_bx::after {
+/* .categories_slider .slider_bx::after {
     content: "";
     position: absolute;
     width: 60px;
     height: 2px;
     background-color: var(--grey_deep);
-}
+} */
 .categories_slider .slider_icon {
     width: 160px;
     height: 160px;
-    line-height: 160px;
     border-radius: 50%;
     background-color: var(--grey_white);
-    text-align: center;
     margin: auto;
+    padding-top: 45px;
 }
 
 .categories_slider .slider_icon img {
     height: 72px;
     width: 72px;
-
+    margin: auto;
 }
 
 .categories_slider .slider_bx p {
@@ -337,10 +329,8 @@ body {
     font-weight: 500;
     line-height: 32px;
     text-align: center;
-
-}
-
-
+    margin-bottom: 0;
+} 
 
 .categories_slider .blog_img_wrapper {
     display: flex;
@@ -590,6 +580,21 @@ body {
         width: 100%;
     }
 
+    .categories_slider .slider_icon{
+        height: 100px;
+        width: 100px;
+        padding-top: 30px; 
+    }
+    .categories_slider .slider_icon img{
+        height: 45px;
+        width: 45px;
+   
+    }
+    .categories_slider .slider_bx p {
+        font-size: 20px;
+        margin-top: 5px;
+    }
+
     .categories_slider .blog_img_wrapper,
     .explore_caegory {
         margin-top: 40px;
@@ -690,6 +695,23 @@ body {
 
     .categories_slider .blog_heading {
         font-size: 18px;
+    }
+
+
+    .categories_slider .slider_icon {
+        height: 80px;
+        width: 80px;
+        padding-top: 20px;
+    }
+    .categories_slider .slider_icon img {
+        height: 35px;
+        width: 35px;
+    }
+
+    .categories_slider .slider_bx p {
+        font-size: 16px;
+        margin-top: 5px;
+        line-height: 20px;
     }
 
     .categories_slider .blog_title {
@@ -793,6 +815,9 @@ body {
         grid-template-columns: auto;
         gap: 40px;
 
+    }
+    .categories_slider .bottom_text_wrapper{
+        bottom: 20px;
     }
 
     .explore_caegory .blog_img img,
