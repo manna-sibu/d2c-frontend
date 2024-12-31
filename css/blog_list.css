@@ -8,6 +8,8 @@
     --white: #FFFFFF;
     --dep-purple: rgba(97, 51, 133, 1);
     --var-yellow: rgba(242, 163, 43, 1);
+    --dark: rgba(13, 13, 13, 1);
+    --grey_white: rgba(245, 245, 245, 1);
 }
 
 html,
@@ -27,14 +29,7 @@ body {
     text-decoration-skip-ink: none;
 }
 
-
-/* blog post wrapper */
-/* .blog_post_wrapper {
-    width: 100%;
-} */
-
 .blog_post_wrapper .author_info {
-
     display: flex;
     gap: 12px;
 
@@ -218,8 +213,6 @@ body {
 
 }
 
-/* end left */
-/* start right */
 
 .right_site .blog_wrapper {
     display: flex;
@@ -307,6 +300,47 @@ body {
 .categories_slider .blog-site-heading {
     margin-bottom: 60px;
 }
+
+.categoies_slider_wrapper .flickity-page-dots {
+    display: none !important;
+}
+.categories_slider .slider_bx {
+    position: relative;
+}
+
+.categories_slider .slider_bx::after {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 2px;
+    background-color: var(--grey_deep);
+}
+.categories_slider .slider_icon {
+    width: 160px;
+    height: 160px;
+    line-height: 160px;
+    border-radius: 50%;
+    background-color: var(--grey_white);
+    text-align: center;
+    margin: auto;
+}
+
+.categories_slider .slider_icon img {
+    height: 72px;
+    width: 72px;
+
+}
+
+.categories_slider .slider_bx p {
+    color: var(--dark);
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 32px;
+    text-align: center;
+
+}
+
+
 
 .categories_slider .blog_img_wrapper {
     display: flex;
@@ -670,10 +704,11 @@ body {
     .categories_slider .blog_title {
         padding-top: 10px 0px 0px 10px;
     }
-    .explore_caegory{
+
+    .explore_caegory {
 
         margin-bottom: 40px;
-    margin-top: 0px;
+        margin-top: 0px;
     }
 
     .explore_caegory .blog_img img,
@@ -753,7 +788,7 @@ body {
     .categories_slider .blog_img_wrapper {
         display: block;
     }
-   
+
     .explore_caegory .blog-wrapper {
         grid-template-columns: auto;
         gap: 40px;
@@ -780,6 +815,7 @@ body {
         font-size: 25px;
         margin-bottom: 20px;
     }
+
     .knowledge_base {
         padding-top: 40px;
         padding-bottom: 20px;
@@ -823,14 +859,16 @@ body {
         padding: 20px 20px 20px 0px;
     }
 
-    .explore_caegory .view_link{
+    .explore_caegory .view_link {
         position: relative;
-        
+
     }
+
     .explore_caegory .blog_img img,
     .explore_caegory .blog_img {
         height: 250px;
     }
+
     .explore_caegory .blog_post_wrapper .blog_title {
         line-height: 24px;
         font-size: 18px;
