@@ -202,6 +202,7 @@ p {
 
 /* milestone  */
 
+
 .section-seven_slider .brand-slider {
     margin-bottom: 30px;
 }
@@ -257,7 +258,9 @@ p {
 .groupSlider .slider,
 .singleSlider .slider {
     width: 100%;
+    left: 70px !important;
 }
+
 
 .section-seven_slider .brand-slider .flickity-button.previous {
     background: url(../images/prev-arrow2\ \(1\).png) center center no-repeat;
@@ -776,7 +779,7 @@ svg {
     margin-top: 24px;
 
 }
-.review_border p{
+.review_border{
     padding-bottom: 30px;
 }
 .reviewer_commemnt {
