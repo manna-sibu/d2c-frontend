@@ -11,7 +11,7 @@ html {
     --gray: #808080;
     --white: #fff;
     --light_black: #515253;
-    --gray: #606060;
+    --gray-6: #606060;
     --dark-yellow: #7A4A00;
     --gold-yellow: #F2A32B;
 }
@@ -685,192 +685,129 @@ svg {
     margin-top: 108px;
 }
 
-/* body {
-    font-family: sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    flex-direction: column;
-  } */
-
-.review_buttons {
-    display: flex;
-    justify-content: space-between;
-}
-
 .filter a {
-    float: right;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+    color: var(--off-white);
+    background-color: var(--deep-purple);
+    padding: 8px 60px;
+    border-radius: 8px;
 }
 
-.customer_review ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+.review_img img {
+    border-radius: 8px;
+}
+
+.review_img {
     display: flex;
-    margin-bottom: 1rem;
+    gap: 24px;
 }
 
-.customer_review ul li {
-    margin: 0;
-    padding: 0;
-    width: 150px;
-    text-align: center;
+.review_right_img {
+    background-image: url(../images/review2.jfif);
+    height: 280px;
+    width: 246px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    border-radius: 8px;
 }
 
-.customer_review ul li.bg {
-    background-color: #ccc;
-    border-radius: 2rem;
-    transform: translatex(-300%);
-    z-index: -1;
-    transition: all .5s ease-in-out;
-}
-
-.customer_review ul li label {
-    display: inline-block;
-    padding: 10px 20px;
-    border-radius: 100px;
-}
-
-.customer_review #button-1:checked~ul li.bg {
-    transform: translatex(-300%);
-}
-
-.customer_review #button-2:checked~ul li.bg {
-    transform: translatex(-200%);
-}
-
-.customer_review #button-3:checked~ul li.bg {
-    transform: translatex(-100%);
-}
-
-.customer_review #button-1:checked~#content #tab-1 {
-    display: flex;
-}
-
-.customer_review #button-2:checked~#content #tab-2 {
-    display: flex;
-}
-
-.customer_review #button-3:checked~#content #tab-3 {
-    display: flex;
-}
-
-.customer_review #button-1:checked~#shadow #content {
-    transform: translatex(0px);
-}
-
-.customer_review #button-2:checked~#shadow #content {
-    transform: translatex(-33.33%);
-}
-
-.customer_review #button-3:checked~#shadow #content {
-    transform: translatex(-66.67%);
-}
-
-.customer_review #tabs {
-    max-width: 100%;
-}
-
-.customer_review #shadow {
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, .15);
-    border-radius: 12px;
-    overflow: hidden;
-}
-
-.customer_review #content {
-    display: flex;
-    width: 300%;
-    box-sizing: border-box;
-    transition: all .5s ease-in-out;
-}
-
-.customer_review #content>div {
-    padding: 20px;
-    padding-left: 40px;
-    display: flex;
-    align-items: center;
-    flex: 1;
-}
-
-.customer_review #content .left {
-    flex: 2;
-}
-
-.customer_review #content .right {
-    flex: 1;
-}
-
-.customer_review #content img {
+.review_right_img::after {
+    content: "";
+    position: absolute;
+    background-color: var(--white);
+    opacity: 0.5;
+    top: 0;
+    height: 100%;
     width: 100%;
 }
 
-.customer_review #content h4 {
-    margin: 0;
-    font-size: 1.5rem;
-    letter-spacing: -1px;
+.left_review_img img {
+    height: 280px;
+    width: 246px;
 }
 
-.customer_review #content p {
-    font-size: 1rem;
-    line-height: 1.5rem;
-    margin: 1.2rem 0;
+.review_right_img p {
+    position: relative;
+    z-index: 1234;
+    color: var(--deep-purple);
+    font-size: 48px;
+    line-height: 28px !important;
+    text-align: center;
+    top: 105px;
+    font-weight: 600;
 }
 
-.customer_review #content button {
-    background-color: #000;
-    color: #fff;
+.review_right_img span {
+    font-size: 24px;
+
+}
+.review_first{
+    margin-top: 48px;
+}
+
+.reviwer_name p {
+    margin-bottom: 0;
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 700;
+    color: var(--deep-purple);
+}
+
+.reviwer_name ul {
+    display: flex;
+}
+
+.reviwer_name ul li {
+    color: var(--deep-purple);
+    font-size: 14px;
+}
+
+.reviewer_commemnt p {
+    width: 507px;
     display: inline-block;
-    border: 0;
-    padding: 12px 20px;
-    font-size: 1.2rem;
-    border-radius: 2rem;
-    transition: all .25s ease-in-out;
-    cursor: pointer;
+    font-size: 20px;
+    line-height: 32px !important;
+    font-weight: 500;
+    color: var(--gray-6);
+    margin-top: 24px;
+
 }
 
-.customer_review #content button:hover {
-    transform: scale(1.08);
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, .15);
+.reviewer_commemnt {
+    /* border-bottom: 1px solid var(--gray); */
+    width: fit-content;
+}
+.reviewer_border{
+    border-bottom: 1px solid var(--off-white);
+    width: 200px;
+    height: auto;
+}
+.review_icon ul {
+    display: flex;
+    gap: 119px;
+    margin-top: 10px;
 }
 
-.customer_review input[type="radio"] {
-    display: none;
+.image_review_section {
+    padding: 32px;
+    box-shadow: 0px 0px 8px 0px #00000033;
+    display: inline-block;
+    border: 1px solid var(--off-white);
+    border-radius: 8px;
 }
-
-
-/* Style the tab */
-.tab {
-    overflow: hidden;
-    border: 1px solid #ccc;
-    background-color: #f1f1f1;
+.review_section{
+    display: flex;
+    gap: 40px;
 }
-
-/* Style the buttons that are used to open the tab content */
-.tab button {
-    background-color: inherit;
-    float: left;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 14px 16px;
-    transition: 0.3s;
+.review_short_box{
+    box-shadow: 0px 0px 8px 0px #00000033;
+border: 1px solid var(--off-white);
+padding: 32px;
 }
-
-/* Change background color of buttons on hover */
-.tab button:hover {
-    background-color: #ddd;
-}
-
-/* Create an active/current tablink class */
-.tab button.active {
-    background-color: #ccc;
-}
-
-/* Style the tab content */
-.tabcontent {
-    display: none;
-    padding: 6px 12px;
-    border: 1px solid #ccc;
-    border-top: none;
+.review_short_two{
+    margin-top: 40px;
 }
