@@ -181,6 +181,26 @@ function openCity(evt, cityName) {
 
 
 
+//   categories  slider//////////////
+
+if($('.short_box_beardo2').length > 0){
+    $('.short_box_beardo2').flickity({
+        //options            
+        cellAlign: 'left',
+        wrapAround: true,
+        groupCells: "100%",
+        contain: true,
+        pageDots: true,
+        prevNextButtons: true,
+        imagesLoaded: true,
+        adaptiveHeight: true, 
+        draggable: true,
+    });
+};
+
+
+
+
  
    
 
