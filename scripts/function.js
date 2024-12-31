@@ -181,23 +181,39 @@ function openCity(evt, cityName) {
   }
 
 
-
-//   categories  slider//////////////
-
-if($('.slider_bx').length > 4){
-    $('.categoies_slider_wrapper').flickity({
-        //options            
-        cellAlign: 'left',
-        wrapAround: true,
-        groupCells: "100%",
-        contain: true,
-        pageDots: true,
-        prevNextButtons: true,
-        imagesLoaded: true,
-        adaptiveHeight: true, 
-        draggable: true,
+// category slider
+$(document).ready(function() {
+    $('.category-slider').slick({
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        arrows: true,
+        navs:true,
+        dots: false,
+        speed: 300,
+        centerPadding: '10px',
+        infinite: true,
+        autoplaySpeed: 5000,
+        autoplay: true ,
+        responsive: [
+            {
+              breakpoint: 991,
+              settings: {
+                slidesToShow: 4,
+              }
+            },
+            {
+              breakpoint: 767,
+              settings: {
+                slidesToShow: 3,
+              }
+            },
+          ]
+            });
+        
     });
-};
+
+  
+
 
 
 
