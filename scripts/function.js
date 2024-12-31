@@ -184,8 +184,8 @@ function openCity(evt, cityName) {
 
 //   categories  slider//////////////
 
-if($('.short_box_beardo2').length > 0){
-    $('.short_box_beardo2').flickity({
+if($('.slider_bx').length > 4){
+    $('.categoies_slider_wrapper').flickity({
         //options            
         cellAlign: 'left',
         wrapAround: true,
@@ -198,6 +198,8 @@ if($('.short_box_beardo2').length > 0){
         draggable: true,
     });
 };
+
+
 
 
 
