@@ -1,0 +1,339 @@
+html, body{
+    overflow-x: hidden;
+}
+.customer_review {
+    margin-bottom: 108px;
+}
+
+.write_review button{
+    margin-top: 48px;
+}
+
+.write_review button:nth-child(1) {
+    background-color: #613385;
+    border: unset;
+    border-radius: 8px;
+    padding: 12px 32px;
+    color: #f5f5f5;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 600;
+}
+.write_review button:nth-child(2) {
+    background-color: #f5f5f5;
+    border: unset;
+    border-radius: 8px;
+    padding: 12px 32px;
+    color: #613385;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 600;
+    margin-left: 20px;
+}
+
+@media (max-width:1280px) {
+
+    /* team  */
+    .teaming {
+        margin-right: 120px;
+    }
+}
+
+@media (max-width:1024px) {
+
+    /* team  */
+    .team_img {
+        left: -30px;
+    }
+
+    .team_img2 {
+        left: unset;
+        right: -120px;
+    }
+
+    .team_img img {
+        width: 203px;
+        height: 246px;
+    }
+
+    .teaming {
+        margin-right: 80px;
+    }
+
+    .team_card_two {
+        margin-left: 70px;
+    }
+
+    .team .brand_flex {
+        gap: 90px;
+    }
+
+    /* roadmap  */
+    .roadmap_header_color {
+        width: 198px;
+    }
+
+    .roadmap_sidecolor {
+        height: 330px;
+        width: 108px;
+    }
+     /* customer review  */
+     .review_section {
+        width: fit-content;
+    }
+
+    .review_section {
+        display: inline-block;
+    }
+
+    .tab-content>.active {
+        text-align: center;
+    }
+
+    .reviwer_name ul {
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .review_right_section {
+        margin-top: 40px;
+    }
+    .write_review{
+        text-align: center;
+    }
+}
+
+@media (min-width:769px) and (max-width:990px) {
+
+    /* the story  */
+    .the_story .brand_flex {
+        display: inline-block !important;
+    }
+    .teaming2{
+        right: -40px;
+    }
+    .team_img img {
+        width: 198px;
+        height: 236px;
+    }
+    .team .brand_flex{
+        margin-left: 210px;
+    }
+    .roadmap_sidecolor {
+        height: 100%;
+    }
+    .achievement_all_box {
+        transform: translateY(100px);
+    }
+    .connect_button a {
+        padding: 12px 6px;
+        font-size: 13px;
+    }
+}
+
+@media (max-width:768px) {
+
+
+    .team_img img {
+        width: 203px;
+        height: 235px;
+    }
+
+    .teaming2 {
+        right: -48px;
+    }
+
+    /* roadmap  */
+    .roadmap_points {
+        padding: 0 5px 0 55px;
+    }
+
+    .team_heading {
+        padding-left: 10px;
+    }
+
+    .achievement_all_box {
+        transform: translateY(105px);
+    }
+
+    .roadmap_sidecolor {
+        height: 370px;
+    }
+
+    .roadmap_header_color {
+        width: 210px;
+    }
+
+
+}
+@media (min-width:576px) and (max-width:756px){
+    .team_card_two {
+        margin-left: 5px;
+    }
+    .teaming2 {
+        right: -45px;
+    }
+    .buzz_right{
+        display: inline-block;
+    }
+    .buzz_short_box img {
+        height: 101%;
+    }
+    .short_details {
+        width: 100%;
+    }
+    .buzz_short_box{
+        margin-top: 30px;
+    }
+    .achievement_box {
+        display: grid;
+        grid-template-columns: auto auto;
+}
+.achievement_all_box{
+    transform: unset;
+}
+.achieve_content{
+    height: 100%;
+}
+.achievement_short_box p{
+    color: #fff;
+}
+.achieve_weight{
+    color: #FFF;
+}
+.achieve_view {
+    transform: translateY(70px);
+}
+.roadmap{
+    padding-top: 0;
+}
+.roadmap_sidecolor {
+    height: 100%;
+}
+.roadmap_header_color {
+    width: 186px;
+}
+.connect_button a {
+    padding: 12px 6px;
+
+}
+}
+
+@media (max-width:575px) {
+
+    /* about the brand  */
+    .market_place ul li a {
+        padding: 12px;
+    }
+
+    /* achievement  */
+    .achievement_all_box {
+        transform: unset;
+    }
+
+    .achieve_view {
+        transform: translateY(56px);
+    }
+
+    /* roadmap  */
+    .roadmap_header_color {
+        width: 175px;
+    }
+
+    .roadmap_sidecolor {
+        height: 100%;
+    }
+
+    .roadmap_points {
+        padding: 0 5px 0 64px;
+    }
+
+    /* team  */
+    .team .brand_flex {
+        margin-left: -10px;
+    }
+
+    .team_img {
+        left: -38px;
+    }
+
+    .team_sectn2 .team_img {
+        left: unset;
+    }
+
+    .team_card_two {
+        margin-left: 0;
+    }
+
+    .member_view {
+        transform: translate(-54px, 12px);
+    }
+
+    .member_view_two {
+        transform: translate(45px, 10px) !important;
+    }
+
+    .member_details {
+        padding: 20px 36px 23px 29px;
+    }
+
+    .team_sectn2 .member_details {
+        padding: 20px 28px 23px 12px;
+    }
+
+    /* customer review  */
+    .custom_button {
+        display: inline-block;
+        width: 100%;
+    }
+
+    .nav-pills .nav-link {
+        padding: 6px 15px;
+    }
+
+    .nav-pills .nav-link.active,
+    .nav-pills .show>.nav-link {
+        padding: 6px 15px;
+    }
+
+    .custom_gap {
+        margin-left: 5px;
+    }
+
+    .review_section {
+        margin-top: 35px;
+    }
+
+    .review_right_section {
+        width: fit-content;
+    }
+
+    .reviewer_commemnt p {
+        width: fit-content;
+    }
+
+    .review_icon ul {
+        gap: 0;
+        justify-content: space-between;
+    }
+
+    .review_img {
+        display: inline-block;
+    }
+
+    .left_review_img img {
+        width: 100%;
+    }
+
+    .image_review_section {
+        padding: 32px 15px;
+    }
+
+    .review_short_box {
+        padding: 32px 15px;
+    }
+
+    .review {
+        float: right;
+    }
+}
