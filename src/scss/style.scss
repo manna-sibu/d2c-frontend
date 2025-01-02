@@ -9,6 +9,8 @@
 @use 'partials/blogdetails' as*;
 @use 'partials/about' as*;
 @use 'partials/brandprofile' as*;
+@use "partials/responsive" as*;
+@use "partials/bloglist" as*;
 
 @font-face {
     font-family: "Font Awesome 6 Free";
