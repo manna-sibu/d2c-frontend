@@ -229,7 +229,27 @@ $(document).ready(function () {
         centerPadding: '10px',
         infinite: true,
         autoplaySpeed: 5000,
-        autoplay: false
+        autoplay: false,
+        responsive: [
+            {
+              breakpoint: 991,
+              settings: {
+                slidesToShow: 3,
+              }
+            },
+            {
+              breakpoint: 769,
+              settings: {
+                slidesToShow: 2,
+              }
+            },
+            {
+                breakpoint: 575,
+                settings: {
+                  slidesToShow: 1,
+                }
+              }
+          ]
     });
 });
 
